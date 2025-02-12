@@ -1,12 +1,12 @@
 public class SuspendedState implements AccountState {
     @Override
     public void deposit(Account account, double amount) {
-        System.out.println("You cannot deposit on suspended account! " + account.toString());
+        System.out.println("You can not deposit on suspended account! " + account.toString());
     }
 
     @Override
     public void withdraw(Account account, double amount) {
-        System.out.println("You cannot withdraw on suspended account! " + account.toString());
+        System.out.println("You can not withdraw on suspended account! " + account.toString());
     }
 
     @Override
